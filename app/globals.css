@@ -29,3 +29,20 @@ body {
   background: #e8e5df;
   color: #242424;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
