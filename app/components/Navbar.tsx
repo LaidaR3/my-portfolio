@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -15,7 +16,6 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close mobile menu when switching to desktop
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 1280px)");
 
@@ -37,22 +37,28 @@ export default function Navbar() {
 
     const section = document.querySelector(href);
 
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    if (!section) return;
 
-      window.history.replaceState(null, "", href);
-    }
+    const navbarHeight = 72;
+    const extraSpacing = 16;
+
+    const sectionTop =
+      section.getBoundingClientRect().top +
+      window.scrollY -
+      (href === "#home" ? 0 : navbarHeight + extraSpacing);
+
+    window.scrollTo({
+      top: Math.max(0, sectionTop),
+      behavior: "smooth",
+    });
+
+    window.history.replaceState(null, "", href);
   };
 
   return (
     <header className="relative z-50 w-full border-b border-[#E5E1DB] bg-[#F8F7F4]">
-
       {/* Main Navbar */}
       <nav className="mx-auto flex h-[72px] w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-10">
-
         {/* Logo */}
         <a
           href="#home"
@@ -75,7 +81,7 @@ export default function Navbar() {
                 e.preventDefault();
                 handleNavigation(link.href);
               }}
-              className="whitespace-nowrap text-[10px] uppercase tracking-[0.14em] text-[#242424] transition-opacity duration-300 hover:opacity-50"
+              className="whitespace-nowrap text-[10px] uppercase tracking-[0.14em] text-[#242424] transition-opacity duration-300 hover:text-[#761f22]"
             >
               {link.label}
             </a>
@@ -97,9 +103,9 @@ export default function Navbar() {
           className="flex h-11 w-11 shrink-0 items-center justify-center text-[#242424] xl:hidden"
         >
           {menuOpen ? (
-            <span className="text-3xl leading-none">×</span>
+            <X size={25} strokeWidth={1.5} />
           ) : (
-            <span className="text-2xl leading-none">☰</span>
+            <Menu size={25} strokeWidth={1.5} />
           )}
         </button>
       </nav>
@@ -109,14 +115,13 @@ export default function Navbar() {
         id="mobile-navigation"
         aria-hidden={!menuOpen}
         inert={!menuOpen}
-        className={`w-full overflow-hidden border-t border-[#E5E1DB] bg-[#F8F7F4] transition-[max-height,opacity] duration-300 ease-in-out xl:hidden ${
+        className={`absolute left-0 right-0 top-full z-50 w-full overflow-hidden border-t border-[#E5E1DB] bg-[#F8F7F4] shadow-lg transition-[max-height,opacity] duration-300 ease-in-out xl:hidden ${
           menuOpen
             ? "max-h-[550px] opacity-100"
             : "max-h-0 border-t-0 opacity-0"
         }`}
       >
         <div className="mx-auto flex w-full max-w-6xl flex-col px-5 py-6 sm:px-8">
-
           {/* Mobile Navigation Links */}
           {navLinks.map((link, index) => (
             <a
@@ -126,11 +131,11 @@ export default function Navbar() {
                 e.preventDefault();
                 handleNavigation(link.href);
               }}
-              className="flex items-center justify-between border-b border-[#E5E1DB] py-4 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-colors hover:text-[#857B70]"
+              className="flex items-center justify-between border-b border-[#E5E1DB] py-4 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-colors hover:text-[#761f22] active:text-[#761f22]"
             >
               <span>{link.label}</span>
 
-              <span className="font-editorial text-lg italic text-[#A89C8C]">
+              <span className="font-editorial text-lg italic text-[#761f22]">
                 0{index + 1}
               </span>
             </a>
