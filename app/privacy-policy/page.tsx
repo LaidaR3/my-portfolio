@@ -1,6 +1,7 @@
-
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowLeft, MoveUpRight } from "lucide-react";
+
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Laida Rusinovci",
@@ -23,9 +24,15 @@ export default function PrivacyPolicy() {
 
           <Link
             href="/"
-            className="text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
+            className="group inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-[#761f22] transition-opacity hover:opacity-50"
           >
-            ← Back to Portfolio
+            <ArrowLeft
+              size={16}
+              strokeWidth={1.5}
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:-translate-x-1"
+            />
+            Back to Portfolio
           </Link>
         </nav>
       </header>
@@ -163,9 +170,18 @@ export default function PrivacyPolicy() {
 
               <a
                 href="mailto:rusinovcilaida13@gmail.com"
-                className="mt-3 inline-block break-all border-b border-[#857B70] text-[#242424] transition-opacity hover:opacity-50"
+                className="group mt-3 inline-flex max-w-full items-center gap-2 border-b border-[#761f22] pb-1 text-[#761f22] transition-opacity hover:opacity-50"
               >
-                rusinovcilaida13@gmail.com ↗
+                <span className="min-w-0 break-all">
+                  rusinovcilaida13@gmail.com
+                </span>
+
+                <MoveUpRight
+                  size={20}
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                  className="shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
               </a>
             </div>
           </div>
@@ -174,9 +190,15 @@ export default function PrivacyPolicy() {
           <div className="mt-16 border-t border-[#D8D4CE] pt-8">
             <Link
               href="/"
-              className="text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
+              className="group inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-[#761f22] transition-opacity hover:opacity-50"
             >
-              ← Back to Portfolio
+              <ArrowLeft
+                size={16}
+                strokeWidth={1.5}
+                aria-hidden="true"
+                className="transition-transform duration-300 group-hover:-translate-x-1"
+              />
+              Back to Portfolio
             </Link>
           </div>
         </div>
