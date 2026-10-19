@@ -137,7 +137,7 @@ export default function Projects() {
 
               {/* Category and Number */}
               <div className="mt-6 flex items-center justify-between gap-3 border-b border-[#CFCAC2] pb-4">
-                <span className="min-w-0 text-[9px] uppercase tracking-[0.15em] text-[#761f22] sm:text-[10px] sm:tracking-[0.2em]">
+                <span className="min-w-0 text-[9px] uppercase tracking-[0.15em] text-[#857B70] sm:text-[10px] sm:tracking-[0.2em]">
                   {project.category}
                 </span>
 

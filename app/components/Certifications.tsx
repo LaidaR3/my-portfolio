@@ -98,7 +98,7 @@ export default function Certifications() {
               <div>
                 {/* Category and Number */}
                 <div className="mb-8 flex items-start justify-between gap-4">
-                  <span className="text-[10px] uppercase leading-5 tracking-[0.15em] text-[#857B70] sm:tracking-[0.2em]">
+                  <span className="text-[10px] uppercase leading-5 tracking-[0.15em] text-[#761f22] sm:tracking-[0.2em]">
                     {cert.category}
                   </span>
 
@@ -119,7 +119,7 @@ export default function Certifications() {
               </div>
 
               {/* Year and Credential Link */}
-              <div className="mt-8 flex items-center justify-between gap-3 border-t border-[#761f22] pt-5">
+              <div className="mt-8 flex items-center justify-between gap-3 border-t border-[#857B70] pt-5">
                 <span className="text-xs text-[#857B70]">
                   {cert.year}
                 </span>
