@@ -68,7 +68,7 @@ export default function Experience() {
 
         {/* Heading */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
-          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#857B70] sm:text-[11px]">
+          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#761f22] sm:text-[11px]">
             03 / My Journey
           </p>
 

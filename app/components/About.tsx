@@ -11,7 +11,7 @@ export default function About() {
 
         {/* Section Heading */}
         <div className="mb-10 text-center sm:mb-12 lg:mb-14">
-          <p className="mb-4 text-[10px] uppercase tracking-[0.25em] text-[#857B70]">
+          <p className="mb-4 text-[10px] uppercase tracking-[0.25em] text-[#761f22]">
             01 / Introduction
           </p>
 
@@ -62,7 +62,7 @@ export default function About() {
             </div>
 
             {/* Decorative Line */}
-            <div className="mt-7 h-px w-16 bg-[#A89C8C]" />
+            <div className="mt-7 h-px w-16 bg-[#761f22]" />
 
             <p className="mt-4 text-[10px] uppercase tracking-[0.18em] text-[#857B70]">
               Based in Prishtina, Kosovo
@@ -74,7 +74,7 @@ export default function About() {
 
             <div className="relative">
               {/* Decorative Frame */}
-              <div className="pointer-events-none absolute -left-4 -top-4 h-full w-full border border-[#B9B1A6]" />
+              <div className="pointer-events-none absolute -left-4 -top-4 h-full w-full border border-[#761f22]" />
 
               {/* Image */}
               <div className="relative aspect-[4/5] overflow-hidden bg-[#DDD8D0]">

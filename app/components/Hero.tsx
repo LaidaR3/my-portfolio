@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-5xl">
 
         {/* Professional Label */}
-        <p className="mb-7 text-[9px] uppercase leading-5 tracking-[0.18em] text-[#857B70] sm:mb-8 sm:text-[10px] sm:tracking-[0.3em]">
+        <p className="mb-7 text-[9px] uppercase leading-5 tracking-[0.18em] text-[#761f22] sm:mb-8 sm:text-[10px] sm:tracking-[0.3em]">
           Software Development & Cybersecurity
         </p>
 
@@ -38,27 +38,27 @@ export default function Hero() {
 
           <a
             href="#projects"
-            className="group inline-flex items-center gap-3 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
+            className="group inline-flex items-center gap-3 border-b border-[#761f22] pb-2 text-[10px] uppercase tracking-[0.2em] text-[#761f22] transition-opacity hover:opacity-50"
           >
             View My Work
             <ArrowUpRight
               size={16}
               strokeWidth={1.5}
               aria-hidden="true"
-              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              className="text-[#761f22] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-active:translate-x-1 group-active:-translate-y-1"
             />
           </a>
 
           <a
             href="#contact"
-            className="group inline-flex items-center gap-3 border-b border-[#857B70] pb-2 text-[10px] uppercase tracking-[0.2em] text-[#857B70] transition-opacity hover:opacity-50"
+            className="group inline-flex items-center gap-3 border-b border-[#761f22] pb-2 text-[10px] uppercase tracking-[0.2em] text-[#761f22] transition-opacity hover:opacity-50"
           >
             Get in Touch
             <ArrowUpRight
               size={16}
               strokeWidth={1.5}
               aria-hidden="true"
-              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              className="text-[#761f22] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-active:translate-x-1 group-active:-translate-y-1"
             />
           </a>
 

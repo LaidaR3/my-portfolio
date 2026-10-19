@@ -41,7 +41,7 @@ export default function Contact() {
           {/* Email */}
           < a
             href="mailto:rusinovcilaida13@gmail.com"
-            className="group inline-flex max-w-full items-center justify-center gap-3 border-b border-[#242424] pb-2 text-center transition-opacity hover:opacity-50"
+            className="group inline-flex max-w-full items-center justify-center gap-3 border-b border-[#761f22] pb-2 text-center transition-opacity hover:opacity-50"
           >
             <span className="font-editorial min-w-0 break-all text-[clamp(1.15rem,4vw,2.5rem)] italic text-[#242424]">
               rusinovcilaida13@gmail.com
@@ -63,7 +63,7 @@ export default function Contact() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 border-b border-[#857B70] pb-2 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-opacity duration-300 hover:opacity-50"
+                className="group inline-flex items-center gap-2 border-b border-[#761f22] pb-2 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-opacity duration-300 hover:opacity-50"
               >
                 {link.name}
 
@@ -81,7 +81,7 @@ export default function Contact() {
           <a
             href="/Laida_Rusinovci_CV.pdf"
             download="Laida_Rusinovci_CV.pdf"
-            className="group mt-4 inline-flex items-center justify-center gap-3 border border-[#242424] px-8 py-4 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-all duration-300 hover:bg-[#242424] hover:text-[#F8F7F4]"
+            className="group mt-4 inline-flex items-center justify-center gap-3 border border-[#761f22] px-8 py-4 text-[11px] uppercase tracking-[0.2em] text-[#242424] transition-all duration-300 hover:bg-[#242424] hover:text-[#F8F7F4]"
           >
             Download CV
 

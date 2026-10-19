@@ -68,7 +68,7 @@ export default function Skills() {
 
         {/* Section Heading */}
         <div className="mb-12 text-center md:mb-14">
-          <p className="mb-4 text-[10px] uppercase tracking-[0.3em] text-[#857B70]">
+          <p className="mb-4 text-[10px] uppercase tracking-[0.3em] text-[#761f22]">
             02 / Technical Expertise
           </p>
 

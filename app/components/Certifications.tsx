@@ -70,7 +70,7 @@ export default function Certifications() {
 
         {/* Section Heading */}
         <div className="mb-12 sm:mb-16">
-          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#857B70] sm:text-[11px]">
+          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#761f22] sm:text-[11px]">
             05 / Professional Development
           </p>
 
@@ -119,7 +119,7 @@ export default function Certifications() {
               </div>
 
               {/* Year and Credential Link */}
-              <div className="mt-8 flex items-center justify-between gap-3 border-t border-[#D8D4CE] pt-5">
+              <div className="mt-8 flex items-center justify-between gap-3 border-t border-[#761f22] pt-5">
                 <span className="text-xs text-[#857B70]">
                   {cert.year}
                 </span>

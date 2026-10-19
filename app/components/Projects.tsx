@@ -99,7 +99,7 @@ export default function Projects() {
 
         {/* Section Heading */}
         <div className="mb-12 sm:mb-16">
-          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#857B70]">
+          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#761f22]">
             04 / Selected Work
           </p>
 
@@ -137,7 +137,7 @@ export default function Projects() {
 
               {/* Category and Number */}
               <div className="mt-6 flex items-center justify-between gap-3 border-b border-[#CFCAC2] pb-4">
-                <span className="min-w-0 text-[9px] uppercase tracking-[0.15em] text-[#857B70] sm:text-[10px] sm:tracking-[0.2em]">
+                <span className="min-w-0 text-[9px] uppercase tracking-[0.15em] text-[#761f22] sm:text-[10px] sm:tracking-[0.2em]">
                   {project.category}
                 </span>
 
@@ -176,7 +176,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group/link inline-flex items-center gap-2 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
+                    className="group/link inline-flex items-center gap-2 border-b border-[##761f22] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#761f22] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
                   >
                     Live Website
                     <ArrowUpRight
@@ -193,7 +193,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group/link inline-flex items-center gap-2 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
+                    className="group/link inline-flex items-center gap-2 border-b border-[#761f22] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#761f22] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
                   >
                     GitHub
                     <ArrowUpRight
