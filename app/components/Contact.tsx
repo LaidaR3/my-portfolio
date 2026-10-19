@@ -15,14 +15,14 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#EEECE7] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24"
+      className="bg-[#F8F7F4] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24"
     >
       <div className="mx-auto w-full max-w-5xl">
 
         {/* Section Heading */}
         <div className="mb-12 text-center">
           <p className="mb-5 text-[10px] uppercase tracking-[0.3em] text-[#857B70]">
-            05 / Get in Touch
+            06 / Get in Touch
           </p>
 
           <h2 className="font-editorial text-[clamp(3rem,6vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-[#242424]">
@@ -66,8 +66,8 @@ export default function Contact() {
 
           {/* Download CV */}
           <a
-            href="/Laida-Rusinovci-CV.pdf"
-            download
+            href="/Laida_Rusinovci_CV.pdf"
+            download="Laida_Rusinovci_CV.pdf"
             className="mt-4 inline-flex items-center justify-center border border-[#242424] px-8 py-4 text-[11px] uppercase tracking-[0.2em] transition-all duration-300 hover:bg-[#242424] hover:text-[#F8F7F4]"
           >
             Download CV ↓

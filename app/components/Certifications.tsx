@@ -62,14 +62,14 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="bg-[#F8F7F4] px-6 py-24 md:px-12 md:py-32"
+      className="bg-[#EEECE7] px-6 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24"
     >
       <div className="mx-auto max-w-6xl">
 
         {/* Section Heading */}
         <div className="mb-16">
           <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-[#857B70]">
-            04 / Professional Development
+            05 / Professional Development
           </p>
 
           <h2 className="font-editorial text-6xl leading-none md:text-8xl">
@@ -91,7 +91,7 @@ export default function Certifications() {
           {certifications.map((cert) => (
             <article
               key={cert.number}
-              className="group flex min-h-[230px] flex-col justify-between border border-[#D8D4CE] p-7 transition-all duration-300 hover:border-[#A89C8C] hover:bg-[#EEECE7] md:p-9"
+              className="group flex min-h-[230px] flex-col justify-between border border-[#D8D4CE] p-7 transition-all duration-300 hover:border-[#A89C8C] hover:bg-[#e1ddd3] md:p-9"
             >
               <div>
                 {/* Category and Number */}

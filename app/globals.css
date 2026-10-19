@@ -33,16 +33,16 @@ body {
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
-  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-section[id] {
-  scroll-margin-top: 80px;
+img {
+  max-width: 100%;
 }

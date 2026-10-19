@@ -48,13 +48,13 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="bg-[#F8F7F4] px-6 py-24 md:px-12 md:py-32"
+            className="bg-[#EEECE7] px-6 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24"
         >
             <div className="mx-auto max-w-6xl">
                 {/* Heading */}
                 <div className="mb-20">
                     <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-[#857B70]">
-                        02 / My Journey
+                        03 / My Journey
                     </p>
 
                     <h2 className="font-editorial text-6xl leading-none md:text-8xl">
