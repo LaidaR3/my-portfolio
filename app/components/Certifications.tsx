@@ -1,4 +1,6 @@
 
+import { ArrowUpRight } from "lucide-react";
+
 const certifications = [
   {
     number: "01",
@@ -62,17 +64,17 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="bg-[#EEECE7] px-6 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24"
+      className="w-full overflow-hidden bg-[#EEECE7] px-5 py-16 sm:px-8 sm:py-20 md:px-12 md:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto w-full max-w-6xl">
 
         {/* Section Heading */}
-        <div className="mb-16">
-          <p className="mb-6 text-[11px] uppercase tracking-[0.3em] text-[#857B70]">
+        <div className="mb-12 sm:mb-16">
+          <p className="mb-6 text-[10px] uppercase tracking-[0.3em] text-[#857B70] sm:text-[11px]">
             05 / Professional Development
           </p>
 
-          <h2 className="font-editorial text-6xl leading-none md:text-8xl">
+          <h2 className="font-editorial text-[clamp(2.8rem,7vw,6rem)] leading-[0.95] tracking-[-0.03em] text-[#242424]">
             Certifications
             <br />
             <span className="italic">& training.</span>
@@ -91,33 +93,33 @@ export default function Certifications() {
           {certifications.map((cert) => (
             <article
               key={cert.number}
-              className="group flex min-h-[230px] flex-col justify-between border border-[#D8D4CE] p-7 transition-all duration-300 hover:border-[#A89C8C] hover:bg-[#e1ddd3] md:p-9"
+              className="group flex min-h-[230px] min-w-0 flex-col justify-between border border-[#D8D4CE] p-6 transition-all duration-300 hover:border-[#A89C8C] hover:bg-[#e1ddd3] sm:p-7 md:p-9"
             >
               <div>
                 {/* Category and Number */}
-                <div className="mb-8 flex items-center justify-between gap-4">
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#857B70]">
+                <div className="mb-8 flex items-start justify-between gap-4">
+                  <span className="text-[10px] uppercase leading-5 tracking-[0.15em] text-[#857B70] sm:tracking-[0.2em]">
                     {cert.category}
                   </span>
 
-                  <span className="font-editorial text-xl italic text-[#A89C8C]">
+                  <span className="font-editorial shrink-0 text-xl italic text-[#A89C8C]">
                     {cert.number}
                   </span>
                 </div>
 
                 {/* Certification Title */}
-                <h3 className="font-editorial text-3xl leading-tight md:text-4xl">
+                <h3 className="font-editorial text-[clamp(1.8rem,3vw,2.5rem)] leading-tight text-[#242424]">
                   {cert.title}
                 </h3>
 
                 {/* Organization */}
-                <p className="mt-4 text-sm text-[#625E58]">
+                <p className="mt-4 text-sm leading-6 text-[#625E58]">
                   {cert.organization}
                 </p>
               </div>
 
               {/* Year and Credential Link */}
-              <div className="mt-8 flex items-center justify-between border-t border-[#D8D4CE] pt-5">
+              <div className="mt-8 flex items-center justify-between gap-3 border-t border-[#D8D4CE] pt-5">
                 <span className="text-xs text-[#857B70]">
                   {cert.year}
                 </span>
@@ -127,9 +129,15 @@ export default function Certifications() {
                     href={cert.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] uppercase tracking-[0.15em] transition hover:opacity-50"
+                    className="group/link inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50"
                   >
-                    View Credential ↗
+                    View Credential
+                    <ArrowUpRight
+                      size={16}
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                      className="shrink-0 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                    />
                   </a>
                 )}
               </div>

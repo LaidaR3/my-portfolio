@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
@@ -123,7 +124,7 @@ export default function Projects() {
             >
 
               {/* Project Image */}
-              <div className="relative aspect-[16/9] w-full overflow-hidden ">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={`${project.title} project preview`}
@@ -175,9 +176,15 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
+                    className="group/link inline-flex items-center gap-2 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
                   >
-                    Live Website ↗
+                    Live Website
+                    <ArrowUpRight
+                      size={16}
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                      className="shrink-0 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                    />
                   </a>
                 )}
 
@@ -186,9 +193,15 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
+                    className="group/link inline-flex items-center gap-2 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.15em] text-[#242424] transition-opacity duration-300 hover:opacity-50 sm:text-xs"
                   >
-                    GitHub ↗
+                    GitHub
+                    <ArrowUpRight
+                      size={16}
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                      className="shrink-0 transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                    />
                   </a>
                 )}
 

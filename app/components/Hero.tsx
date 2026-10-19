@@ -1,4 +1,6 @@
 
+import { ArrowUpRight } from "lucide-react";
+
 export default function Hero() {
   return (
     <section
@@ -6,9 +8,6 @@ export default function Hero() {
       className="flex min-h-[calc(100svh-72px)] items-center justify-center overflow-hidden bg-[#F8F7F4] px-5 py-12 text-center sm:px-8 sm:py-16 lg:px-12"
     >
       <div className="mx-auto w-full max-w-5xl">
-
-        {/* Availability Indicator */}
-      
 
         {/* Professional Label */}
         <p className="mb-7 text-[9px] uppercase leading-5 tracking-[0.18em] text-[#857B70] sm:mb-8 sm:text-[10px] sm:tracking-[0.3em]">
@@ -39,16 +38,28 @@ export default function Hero() {
 
           <a
             href="#projects"
-            className="inline-flex items-center gap-3 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
+            className="group inline-flex items-center gap-3 border-b border-[#242424] pb-2 text-[10px] uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
           >
-            View My Work <span aria-hidden="true">↗</span>
+            View My Work
+            <ArrowUpRight
+              size={16}
+              strokeWidth={1.5}
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center gap-3 border-b border-[#857B70] pb-2 text-[10px] uppercase tracking-[0.2em] text-[#857B70] transition-opacity hover:opacity-50"
+            className="group inline-flex items-center gap-3 border-b border-[#857B70] pb-2 text-[10px] uppercase tracking-[0.2em] text-[#857B70] transition-opacity hover:opacity-50"
           >
-            Get in Touch <span aria-hidden="true">↗</span>
+            Get in Touch
+            <ArrowUpRight
+              size={16}
+              strokeWidth={1.5}
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
           </a>
 
         </div>
