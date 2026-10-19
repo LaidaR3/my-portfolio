@@ -46,7 +46,7 @@ const projects = [
         category: "Bookstore Management System",
         description:
             "A digital bookstore and library management platform supporting book discovery, borrowing, purchases, reviews, and inventory administration.",
-        image: "/images/projects/readopia.png",
+        image: "/images/bookstore.png",
         technologies: ["Full-Stack Development", "Database Management"],
         live: "",
         github: "",
@@ -57,7 +57,7 @@ const projects = [
         category: "Travel Social Platform",
         description:
             "A travel networking application where users can share trips, discover travel companions, upload photos, and communicate through private messaging.",
-        image: "/images/projects/tripzy.png",
+        image: "/images/tripzy.JPG",
         technologies: [
             "React.js",
             "PHP",
